@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    <script src="G.js"></script>
+    <script>
+        var v = [1, 2, 3, 4, 5];
+        let g = new G( v.length + 1 );
+        g.input(1, 2).input(1, 5)
+            .input(2, 4).input(2, 5).input(2, 3)
+            .input(3, 4)
+            .input(4, 5)
+            .output();
+        g.dfs(1);
+        console.log('------------');
+        g.visited = [];
+        g.bfs(1);
+    </script>
